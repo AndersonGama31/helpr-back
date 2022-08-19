@@ -1,5 +1,6 @@
 package com.api.helprback.domain;
 
+import com.api.helprback.domain.dtos.ChamadoDTO;
 import com.api.helprback.domain.enums.Prioridade;
 import com.api.helprback.domain.enums.Status;
 import com.fasterxml.jackson.annotation.JsonFormat;
@@ -24,8 +25,8 @@ public class Chamado implements Serializable {
     private String titulo;
     private String observacoes;
 
-   @ManyToOne
-   @JoinColumn(name="tecnico_id")
+    @ManyToOne
+    @JoinColumn(name="tecnico_id")
     private Tecnico tecnico;
     @ManyToOne
     @JoinColumn(name="cliente_id")

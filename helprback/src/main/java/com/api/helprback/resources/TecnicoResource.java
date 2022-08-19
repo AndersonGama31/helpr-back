@@ -13,7 +13,7 @@ import javax.validation.Valid;
 import java.net.URI;
 import java.util.List;
 import java.util.stream.Collectors;
-
+@CrossOrigin(value = "*")
 @RestController
 @RequestMapping(value="/service/tecnicos")
 public class TecnicoResource {
